@@ -1,0 +1,97 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    max-width: 23%;
+    margin-top: 10em;
+    margin-left: 35em;
+    margin-bottom: 2em;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.mozarella, .tomaat, .olijf {
+    visibility: hidden;
+    margin-top: 13em;
+    margin-left: 38em;
+    max-width: 16%;
+}
+
+.mozarella.visible {
+    visibility: visible;
+}
+
+.tomaat.visible {
+    visibility: visible;
+}
+
+.olijf.visible {
+    visibility: visible;
+}
+
+.mozarella {
+    max-width: 18%;
+}
+
+.tomaat {
+    max-width: 16%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30em;
+    margin-left: 13em;
+}
+
+#mozarellaknop {
+    background-color: rgb(159, 105, 75);
+    border: none;
+    padding: 25px 35px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#olijfknop {
+    background-color: rgb(159, 105, 75);
+    border: none;
+    padding: 25px 53px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tomaatknop {
+    background-color: rgb(159, 105, 75);
+    border: none;
+    padding: 25px 44px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#klaarknop {
+    background-color: rgb(195, 34, 34);
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
