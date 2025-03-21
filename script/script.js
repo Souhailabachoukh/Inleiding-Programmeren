@@ -54,6 +54,7 @@ function controleerToppings() {
 function pizzaIsKlaar() {
     titel.textContent = "Je pizza is klaar!"
 
+    // https://pixabay.com/nl/sound-effects/search/ping%20ready/ 
     const audio = new Audio("./audio/geluid.mp3");
     audio.play();
 }
