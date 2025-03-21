@@ -1,15 +1,19 @@
-console.log("hallo");
 
+// Selecteert de knoppen uit de HTML op basis van hun ID's
 const mozarellaKnop = document.querySelector("#mozarellaknop");
 const tomaatKnop = document.querySelector("#tomaatknop");
 const olijfKnop = document.querySelector("#olijfknop");
 const klaarKnop = document.querySelector("#klaarknop");
 
+// Selecteert de afbeeldingen uit de HTML op basis van hun class
 const tomaatImg = document.querySelector(".tomaat");
 const mozarellaImg = document.querySelector(".mozarella");
 const olijfImg = document.querySelector(".olijf");
+
+//Selecteert de titel uit de HTML
 const titel = document.querySelector("h1");
 
+// Functie om de topping tomaat toe te voegen of verwijderen
 function kiesTomaat() {
     tomaatImg.classList.toggle("visible");
     if (tomaatImg.classList.contains("visible")) {
@@ -21,6 +25,7 @@ function kiesTomaat() {
     }
 }
 
+// Functie om de topping mozarella toe te voegen of verwijderen
 function kiesMozarella() {
     mozarellaImg.classList.toggle("visible");
     if (mozarellaImg.classList.contains("visible")) {
@@ -32,6 +37,7 @@ function kiesMozarella() {
     }
 }
 
+// Functie om de topping olijf toe te voegen of verwijderen
 function kiesOlijf() {
     olijfImg.classList.toggle("visible");
     if (olijfImg.classList.contains("visible")) {
@@ -43,6 +49,7 @@ function kiesOlijf() {
     }
 }
 
+// Functie die controleert of er toppings ontbreken en past de titel aan
 function controleerToppings() {
     if (!tomaatImg.classList.contains("visible")||
         !mozarellaImg.classList.contains("visible")||
@@ -51,6 +58,7 @@ function controleerToppings() {
         }
 }
 
+// Functie die aangeeft dat de pizza klaar is een een geluidje afspeelt
 function pizzaIsKlaar() {
     titel.textContent = "Je pizza is klaar!"
 
@@ -59,6 +67,7 @@ function pizzaIsKlaar() {
     audio.play();
 }
 
+//De knoppen worden gekoppeld aan hun functies 
 tomaatKnop.addEventListener('click', kiesTomaat);
 mozarellaKnop.addEventListener('click', kiesMozarella);
 olijfKnop.addEventListener('click', kiesOlijf);
